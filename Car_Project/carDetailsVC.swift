@@ -14,6 +14,7 @@ class carDetailsVC: UIViewController {
     
     // MARK: Variables
     var car:String?
+    var images:[UIImage]?
 
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -13,8 +13,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
     //    MARK: - Variable
-    var carModelArr = ["Mazzarati" , "tesla ","Toyota","Ferrari","Lambo","Mercedes"]
-    var carModleImgArr = ["TOYOTA","TESLA"]
+    var carModelArr = ["Mazzarati" , "Tesla","Toyota","Ferrari","Lambo","Mercedes"]
+    var carModleImgArr = [UIImage(named: "Mazzarati"),UIImage(named: "Tesla"),UIImage(named: "Toyota"),UIImage(named: "Ferrari"),UIImage(named: "Lambo"),UIImage(named: "Mercedes")]
     
     //    MARK: - view life cycle
     override func viewDidLoad() {
@@ -38,7 +38,7 @@ extension ViewController : UITableViewDelegate,UITableViewDataSource{
         let cell = tableView.dequeueReusableCell(withIdentifier: CarCell.identifier, for: indexPath) as! CarCell
         let name = carModelArr[indexPath.row]
         let images = carModleImgArr[indexPath.row]
-        cell.set(name,images)
+        cell.set(name,images!)
         return cell
     }
     

@@ -10,14 +10,14 @@
 import UIKit
 
 class CarCell: UITableViewCell {
-
+    
     @IBOutlet weak var carImage: UIImageView!
     @IBOutlet weak var carModelCell: UILabel!
     static  let identifier = "car_cell"
     
-    func set(_ name: String ) {
-            carModelCell.text = name
-                         
-        }
+    func set(_ name: String ,_ images: UIImage) {
+        carModelCell.text = name
+        carImage.image = images
+    }
     
 }

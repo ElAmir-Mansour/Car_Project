@@ -17,26 +17,38 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PkT-bf-4vD">
-                        <rect key="frame" x="20" y="0.0" width="42" height="78"/>
+                        <rect key="frame" x="20" y="-30" width="42" height="108"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Bzc-fI-m5K">
-                        <rect key="frame" x="156" y="0.0" width="131" height="78"/>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Bzc-fI-m5K">
+                        <rect key="frame" x="220" y="0.0" width="80" height="78"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="80" id="5sZ-FT-kTj"/>
+                        </constraints>
                     </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pl7-w4-qg5">
+                        <rect key="frame" x="20" y="46" width="61" height="14"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
                 <constraints>
                     <constraint firstItem="Bzc-fI-m5K" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="7BI-Vj-Q4Z"/>
                     <constraint firstAttribute="trailing" secondItem="Bzc-fI-m5K" secondAttribute="trailing" constant="20" id="FCO-AT-0Mx"/>
                     <constraint firstAttribute="bottom" secondItem="PkT-bf-4vD" secondAttribute="bottom" id="Hyd-EL-jp4"/>
+                    <constraint firstItem="Pl7-w4-qg5" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="Odk-qX-Zxu"/>
+                    <constraint firstItem="Pl7-w4-qg5" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="46" id="QT6-W6-IhT"/>
                     <constraint firstItem="PkT-bf-4vD" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="d5L-TO-yQG"/>
-                    <constraint firstItem="PkT-bf-4vD" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="pIY-Yu-8XZ"/>
+                    <constraint firstItem="PkT-bf-4vD" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="-30" id="pIY-Yu-8XZ"/>
                     <constraint firstAttribute="bottom" secondItem="Bzc-fI-m5K" secondAttribute="bottom" id="qQu-ab-YeB"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
+                <outlet property="carDescription" destination="Pl7-w4-qg5" id="OfG-9D-TYr"/>
                 <outlet property="carImage" destination="Bzc-fI-m5K" id="ruN-aL-GWM"/>
                 <outlet property="carModelCell" destination="PkT-bf-4vD" id="T06-hE-5Nf"/>
             </connections>

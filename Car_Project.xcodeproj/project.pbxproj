@@ -71,12 +71,12 @@
 				C1384EBA2955CFA900589195 /* SceneDelegate.swift */,
 				C1384EBC2955CFA900589195 /* ViewController.swift */,
 				C1384ECC2955D7A700589195 /* carDetailsVC.swift */,
+				C1384ED42955E17500589195 /* CarCell.swift */,
 				C1384EBE2955CFA900589195 /* Main.storyboard */,
 				C1384EC12955CFAA00589195 /* Assets.xcassets */,
 				C1384EC32955CFAA00589195 /* LaunchScreen.storyboard */,
 				C1384EC62955CFAA00589195 /* Info.plist */,
 				C1384ECD2955D7A700589195 /* carDetailsVC.xib */,
-				C1384ED42955E17500589195 /* CarCell.swift */,
 				C1384ED52955E17500589195 /* CarCell.xib */,
 			);
 			path = Car_Project;

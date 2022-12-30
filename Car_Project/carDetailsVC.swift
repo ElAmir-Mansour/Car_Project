@@ -12,14 +12,18 @@ class carDetailsVC: UIViewController {
     
     @IBOutlet weak var carDetail: UILabel!
     
+    @IBOutlet weak var carDescription: UILabel!
+    @IBOutlet weak var carImage: UIImageView!
     // MARK: Variables
     var car:String?
-    var images:[UIImage]?
+    var carDesc:String?
+    var images:UIImage?
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         carDetail.text = car
+        carDescription.text = carDesc
+        carImage.image = images
         
     }
     

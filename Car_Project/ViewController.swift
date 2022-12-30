@@ -59,6 +59,9 @@ extension ViewController : UITableViewDelegate,UITableViewDataSource{
         let carModel = carModel[indexPath.row]
         let vc = carDetailsVC()
         vc.car = carModel.carModel
+        vc.carDesc = carModel.carDescription
+        let image = UIImage(named: carModel.carImg)
+        vc.images = image
         navigationController?.pushViewController(vc, animated: false)
     }
     

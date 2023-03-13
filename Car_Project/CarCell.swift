@@ -22,5 +22,8 @@ class CarCell: UITableViewCell {
         let image = UIImage(named: model.carImg)
         carImage.image = image
     }
+
+    // just a test another
+    // test
     
 }
